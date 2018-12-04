@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/g1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/weather_now_menu"
+            android:icon="@drawable/sun_cloud_warm_beautiful_weather128"
+            android:title="الطقس الآن" />
+        <item
+            android:id="@+id/weather5days_menu"
+            android:icon="@drawable/cloud_cloudy_weather128"
+            android:title="الطقس - خمسة ايام" />
+
+        <item
+            android:id="@+id/menuMaps"
+            android:icon="@drawable/ic_pin_drop_black_24dp"
+            android:title="خرائط" />
+
+    </group>
+
+    <group
+        android:id="@+id/g3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/setting_menu"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="إعدادت" />
+        <item
+            android:id="@+id/about_menu"
+            android:icon="@drawable/sed128"
+            android:title="نبذة" />
+        <item
+            android:id="@+id/share_menu"
+            android:icon="@drawable/ic_menu_share"
+            android:title="مشاركة" />
+    </group>
+
+</menu>

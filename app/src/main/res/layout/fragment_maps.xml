@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.MapsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mapFragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".fragments.MapsFragment" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8099dfff">
+
+            <RadioButton
+                android:id="@+id/temMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="درجات الحرارة" />
+
+            <RadioButton
+                android:id="@+id/windMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="سرعة الرياح" />
+
+            <RadioButton
+                android:id="@+id/cloudMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="السحب" />
+
+            <RadioButton
+                android:id="@+id/PrecipitationMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="هطول الأمطار" />
+
+            <RadioButton
+                android:id="@+id/PressureMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الضغط" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5b5959"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-9247071754231219/1078080820"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+</LinearLayout>

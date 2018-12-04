@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llWidget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00767373"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextClock
+            android:id="@+id/tcWidgetClock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="04:23 ص"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#fff"
+            android:textSize="40dp" />
+
+        <ImageView
+            android:id="@+id/ivWidgetIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:layout_weight=".2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvWidgetDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=" الخميس,90سبتمبر"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tvWidgetTempDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="30 سماء صافية "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>
